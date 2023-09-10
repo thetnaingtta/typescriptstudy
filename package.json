@@ -1,12 +1,20 @@
 {
-  "author": "Thet Naing",
-  "devDependencies": {
-    "prettier": "^3.0.3",
-    "typescript": "^5.2.2"
-  },
-  "main": "src/index.ts",
-  "scripts": {
-    "build": "tsc",
-    "format": "prettier --write ."
-  }
+	"author": "Thet Naing",
+	"devDependencies": {
+		"husky": "^8.0.3",
+		"lint-staged": "^14.0.1",
+		"prettier": "^3.0.3",
+		"typescript": "^5.2.2"
+	},
+	"lint-staged": {
+		"*": "prettier --ignore-unknown --write"
+	},
+	"main": "src/index.ts",
+	"type": "module",
+	"version": "1.0.1",
+	"scripts": {
+		"build": "tsc",
+		"format": "prettier --write .",
+		"prepare": "husky install"
+	}
 }
