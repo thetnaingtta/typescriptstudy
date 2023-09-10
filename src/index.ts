@@ -1,5 +1,7 @@
-type Haha = true;
+console.log("Hi hi");
 
-console.log("Hello, world!");
+async function test() {
+  await Promise.resolve("Hi");
+}
 
-export const hello = "world";
+export const hello = "world yay";
